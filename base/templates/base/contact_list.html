@@ -3,7 +3,7 @@
 {% block content%}
 
 <div class="header-bar">
-    <div>
+    <div class="header-username">
         <h1>Hello {{request.user|title}}</h1>
     </div>
 
@@ -19,13 +19,13 @@
         <input class = "search-bar" type="text" name = "search" value="{{search_input}}">
         <input class="all-buttons" type="submit" value = "Search">
     </form>
-    <a id = "add-link" href = "{% url 'contact-create'%} ">&#x2b</a>
+    <a style="margin-top: 5px;" id = "add-link" href = "{% url 'contact-create'%} ">&#x2b</a>
 </div>
 
 <div class="contact-items-wrapper">
     {% for contact in contacts %}
     <div class="contact-wrapper">
-        <div> <p> {{contact.firstname}} {{contact.lastname}}</p></div>
+        <div class="contact-info"> <p> {{contact.firstname}} {{contact.lastname}}</p></div>
 
         <div class="contact-action-buttons">
             <a class="all-buttons" href  = "{% url 'contact' contact.id %}">View</a>

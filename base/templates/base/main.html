@@ -47,11 +47,11 @@
                 font-style: italic;
                 font-weight: normal;
             }
-            .contact-wrapper {
+            div.contact-wrapper {
                 display: flex;
                 flex-wrap: wrap;
             }
-            .contact-wrapper p {
+            .contact-info {
                 margin-left: 15px;
                 font-size: 18px;
             }
@@ -66,11 +66,12 @@
                 border-radius: 4px;
                 padding: 8px;
             }
+
             #search-add-wrapper {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 10px;
+                padding:10px;
             }
             #search-add-wrapper form {
                 margin-top: 20px;
@@ -124,6 +125,73 @@
              color: #696969;
              margin-bottom: 10px;
              font-family: 'Montserrat', sans-serif;
+            }
+            @media screen and (max-width: 425px) {
+                .contact-info {
+                    width: 100px;
+                    font-size: 14px;
+                }
+                .contact-action-buttons a{
+                    padding: 4px;
+                }
+                .header-username {
+                    font-size: 16px;
+                }
+                .header-bar a {
+                    font-size: 14px;
+                }
+            }
+            @media screen and (max-width: 375px) {
+                .header-username {
+                    font-size: 14px;
+                }
+                #search-add-wrapper  {
+                    padding: 5px;
+                }
+                .contact-action-buttons {
+                    margin-right: 2px;
+                }
+                .contact-info {
+                    margin-left: 2px;
+                    padding: 7px;
+                }
+                #add-link {
+                    font-size: 30px;
+                    margin-left: 4px;
+                    margin-right: 2px;
+
+                 }
+            }
+            @media screen and (max-width: 350px) {
+                .container {
+                    padding-bottom: 20px;
+                }
+                .contact-wrapper {
+                      align-items: center;
+                    justify-content: center;
+                    position: relative;
+                }
+                 .contact-action-buttons {
+                    margin-top: 50px;
+                    align-content: center;
+                    margin-right: 45px;
+
+                }
+                div#search-add-wrapper {
+                    padding: 0;
+
+                }
+                 #search-add-wrapper a {
+                    margin-top: 20px;
+                 }
+                 input.search-bar {
+                 padding: 0px;
+                 margin-left: 2px;
+                }
+                input.all-buttons {
+                    padding: 4px;
+                }
+
             }
         </style>
 
