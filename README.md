@@ -22,9 +22,9 @@
 5. Activate virtual env `source NAMEOFTHEVIRTUALENV/bin/activate`.
 
 #### Once the virtaul environment is activated
-1. Install the requirements.txt file `pip install -r requirements.txt`. If you get an error, run `pip freeze > requirements.txt` first and then install the requirements.txt file.
+1. Install the requirements.txt file `pip install -r requirements.txt` to install all the packages and dependencies. If you get an error, run `pip freeze > requirements.txt` first and then install the requirements.txt file.
 2. Run `python manage.py runserver`.
-3. Clink the link: `Starting development server at http://127.0.0.1:8000/`.
+3. Click the link: `Starting development server at http://127.0.0.1:8000/`.
 4. View the project.
 
 #### Navigate through the project
