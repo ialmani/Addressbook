@@ -21,10 +21,33 @@
 4. Activate virtual env `source env/bin/activate`.
 
 #### Once the virtaul environment is activated
-1. Install the requirements.txt file `pip install -r requirements.txt`. If you're on a Mac, run
-`pip freeze > requirements.txt` first and then install the requirements.txt file.
-2 Run `python manage.py runserver`.
-3 Clink the link: `Starting development server at http://127.0.0.1:8000/`.
-4 View the project.
+1. Install the requirements.txt file `pip install -r requirements.txt`. If you're on a Mac, run `pip freeze > requirements.txt` first and then install the requirements.txt file.
+2. Run `python manage.py runserver`.
+3. Clink the link: `Starting development server at http://127.0.0.1:8000/`.
+4. View the project.
 
+#### Navigate through the project
+1. Register an account with username and password.
+![Screenshot](imgs/Register.png)
 
+2. Once registered, you will be logged in. Below is the home page you'll see.
+![Screenshot](imgs/landingpage.png)
+
+3. Click the + icon on the right side to add a contact.
+![Screenshot](imgs/plusicon.png)
+![Screenshot](imgs/add_contact.png)
+
+4. Once submitted, the user will be redirected to the landing page with contacts.
+![Screenshot](imgs/contact_added.png)
+
+5. User can view full contact by clicking the view button.
+![Screenshot](imgs/view_full_contact.png)
+
+6. User can edit contact fields by clicking the edit button.
+![Screenshot](imgs/edit_contact.png)
+
+7. User can delete the contact by clicking the delete button.
+![Screenshot](imgs/delete_contact.png)
+
+8. User can logout by clicking the Logout button on the top right corner
+![Screenshot](imgs/logout.png)
