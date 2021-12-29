@@ -18,8 +18,8 @@
 1. Open your project in IDE.
 2. cd into your project directory. `cd Addressbook/`
 3. Make sure you have virtual env installed. Run `sudo pip install virtualenv` on the terminal if you dont.
-4. Create a virtual env `virtualenv env`.
-5. Activate virtual env `source env/bin/activate`.
+4. Create a virtual env `virtualenv NAMEOFTHEVIRTUALENV`.
+5. Activate virtual env `source NAMEOFTHEVIRTUALENV/bin/activate`.
 
 #### Once the virtaul environment is activated
 1. Install the requirements.txt file `pip install -r requirements.txt`. If you're on a Mac, run `pip freeze > requirements.txt` first and then install the requirements.txt file.
