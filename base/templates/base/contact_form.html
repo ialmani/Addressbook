@@ -1,0 +1,40 @@
+{% extends 'base/main.html' %}
+
+{% block content%}
+
+<div class="header-bar">
+    <a href = "{% url 'contacts' %} ">&#8592</a>
+</div>
+
+<!--<h3>Add Contact</h3>-->
+<div class="card-body">
+    <form method = "POST" action = "">
+        {% csrf_token %}
+<!--        {{form.as_p}}-->
+        <label value = "first name"> {{form.firstname.label}}</label>
+        {{form.firstname}}
+        <label> {{form.lastname.label}}</label>
+        {{form.lastname}}
+
+        <label> {{form.mobile_number.label}}</label>
+        {{form.mobile_number}}
+        <label> {{form.work_number.label}}</label>
+        {{form.work_number}}
+        <label> {{form.home_number.label}}</label>
+        {{form.home_number}}
+
+
+        <label> {{form.email.label}}</label>
+        {{form.email}}
+        <label> {{form.address.label}}</label>
+        {{form.address}}
+
+        <input class="all-buttons" style = "margin-top: 10px;"type = "submit" value = "Submit">
+
+
+    </form>
+</div>
+
+
+{% endblock content%}
+

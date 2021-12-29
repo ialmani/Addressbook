@@ -1,0 +1,30 @@
+{% extends 'base/main.html' %}
+
+{% block content%}
+
+<div class="header-bar">
+<a href = "{% url 'contacts' %} ">&#8592</a>
+</div>
+
+<h2 style = "text-align: center; color: rgb(86,86,86); "> {{contact.firstname}} {{contact.lastname}}</h2>
+<div class="card-body" style = "display: flex; flex-wrap: wrap; flex-direction: column;">
+    <div class="contact-detail">
+        {% if contact.mobile_number is not None %}
+            <div> mobile <p>{{contact.mobile_number}} </p>   </div>
+        {% endif %}
+        {% if contact.work_number is not None %}
+            <div> work <p>{{contact.work_number}} </p></div>
+        {% endif %}
+        {% if contact.home_number is not None %}
+            <div> home <p>{{contact.home_number}} </p></div>
+        {% endif %}
+
+         <div> email <p>{{contact.email}}</p></div>
+         <div> address <p>{{contact.address}}</p></div>
+    </div>
+
+
+</div>
+
+{% endblock content%}
+
